@@ -1,0 +1,12 @@
+package org.demo.annotation.customeranno;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+public @interface Null {
+	String message() default "Element must be null";
+}
